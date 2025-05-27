@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const connection = require("../config/DB");
-const { register, login, logout } = require("../controller/auth");
+const { register, login, logout } = require("../controller/auth.controller.js");
 router.post("/register", register);
 router.post("/login", login);
 router.post("/logout", logout);
