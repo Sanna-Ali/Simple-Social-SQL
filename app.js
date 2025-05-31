@@ -2,12 +2,12 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
-const auth = require("./routes/auth");
-const post = require("./routes/post");
-const comment = require("./routes/comment");
-const like = require("./routes/likes");
-const user = require("./routes/user");
-const relation = require("./routes/relation");
+const auth = require("./routes/auth.route.js");
+const post = require("./routes/post.route.js");
+const comment = require("./routes/comment.route.js");
+const like = require("./routes/likes.route.js");
+const user = require("./routes/user.route.js");
+const relation = require("./routes/relation.route.js");
 
 // Init App
 const app = express();
